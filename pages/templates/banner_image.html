@@ -53,26 +53,36 @@
     transition: color 0.3s ease;
   }
 
-  .social-icon i:hover {
-    color: grey;
-  }
+.social-icon i {
+    color: white;
+    transition: color 0.3s ease;
+}
 
-  .w3-display-topleft {
+.social-icon i:hover {
+    color: grey;
+}
+
+.w3-display-topleft {
     display: flex;
     gap: 20px; /* Adjust the gap value as needed */
-  }
+}
 
-  .button-container .button {
+.button-container .button {
     flex: 0 1 auto;
     width: 150px; /* Adjust width as needed */
     text-align: center;
-  }
+    transition: background-color 0.3s ease; /* Existing transition for working-group-box */
+}
 
-  .black-letter {
+.button-container .button:hover {
+    background-color: rgba(105, 105, 105, 0.9); /* Darker grey on hover */
+}
+
+.black-letter {
     color: black;
-  }
+}
 
-  .working-group-box {
+.working-group-box {
     width: 100px; /* Adjust width as needed */
     height: 100px; /* Adjust height as needed */
     background-color: rgba(105, 105, 105, 0.7); /* Dark grey with slight transparency */
@@ -83,21 +93,21 @@
     text-align: center;
     font-size: 0.9em;
     text-decoration: none; /* Remove underline from links */
-    transition: background-color 0.3s ease;
-  }
+    transition: background-color 0.3s ease; /* Existing transition */
+}
 
-  .working-group-box:hover {
+.working-group-box:hover {
     background-color: rgba(105, 105, 105, 0.9); /* Darker grey on hover */
-  }
+}
 
-  .working-groups-title {
+.working-groups-title {
     font-size: 1.5em; /* Adjust the font size as needed */
     color: white;
     margin-right: 20px; /* Space between title and boxes */
-  }
+}
 
-  .boxes-container {
+.boxes-container {
     display: flex;
     gap: 10px; /* Adjust the gap between boxes as needed */
-  }
+}
 </style>
