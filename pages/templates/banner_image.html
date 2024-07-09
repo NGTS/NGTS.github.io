@@ -31,17 +31,17 @@
         <a href="/pages/tabs/observatory.html" class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off button">Observatory</a>
         <a href="/pages/tabs/research.html" class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off button">Research</a>
       </div>
-      <div class="working-groups-container" style="margin-top: 40px;">
-        <span class="working-groups-title" style="font-size: 1.5em; color: white;">Working groups</span>
-        <div class="boxes-container" style="display: flex; gap: 10px; margin-top: 10px;">
-          <div class="working-group-box">Box 1</div>
-          <div class="working-group-box">Box 2</div>
-          <div class="working-group-box">Box 3</div>
-          <div class="working-group-box">Box 4</div>
-          <div class="working-group-box">Box 5</div>
-          <div class="working-group-box">Box 6</div>
-          <div class="working-group-box">Box 7</div>
-          <div class="working-group-box">Box 8</div>
+      <div class="working-groups-container" style="display: flex; align-items: center; margin-top: 40px;">
+        <span class="working-groups-title" style="font-size: 1.5em; color: white; margin-right: 20px;">Working groups</span>
+        <div class="boxes-container" style="display: flex; gap: 10px;">
+          <a href="/tabs/box1.html" class="working-group-box">Box 1</a>
+          <a href="/tabs/box2.html" class="working-group-box">Box 2</a>
+          <a href="/tabs/box3.html" class="working-group-box">Box 3</a>
+          <a href="/tabs/box4.html" class="working-group-box">Box 4</a>
+          <a href="/tabs/box5.html" class="working-group-box">Box 5</a>
+          <a href="/tabs/box6.html" class="working-group-box">Box 6</a>
+          <a href="/tabs/box7.html" class="working-group-box">Box 7</a>
+          <a href="/tabs/box8.html" class="working-group-box">Box 8</a>
         </div>
       </div>
     </div> 
@@ -63,7 +63,8 @@
   }
 
   .button-container .button {
-    flex: 1;
+    flex: 0 1 auto;
+    width: 150px; /* Adjust width as needed */
     text-align: center;
   }
 
@@ -81,16 +82,22 @@
     justify-content: center;
     text-align: center;
     font-size: 0.9em;
+    text-decoration: none; /* Remove underline from links */
+    transition: background-color 0.3s ease;
+  }
+
+  .working-group-box:hover {
+    background-color: rgba(105, 105, 105, 0.9); /* Darker grey on hover */
   }
 
   .working-groups-title {
     font-size: 1.5em; /* Adjust the font size as needed */
     color: white;
+    margin-right: 20px; /* Space between title and boxes */
   }
 
   .boxes-container {
     display: flex;
     gap: 10px; /* Adjust the gap between boxes as needed */
-    margin-top: 10px;
   }
 </style>
