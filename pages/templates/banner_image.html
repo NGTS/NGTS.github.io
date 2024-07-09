@@ -63,11 +63,15 @@
     }
 
     .button-container .button {
-        flex: 0 1 auto;
-        width: 150px; /* Adjust width as needed */
-        text-align: center;
+    flex: 0 1 auto;
+    width: 150px; /* Adjust width as needed */
+    text-align: center;
+    transition: opacity 0.3s ease; /* Added transition for opacity */
     }
 
+    .button-container .button:hover {
+    opacity: 0.9; /* Adjust opacity value on hover as desired */
+    }
     .black-letter {
         color: black;
     }
