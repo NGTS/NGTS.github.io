@@ -28,8 +28,8 @@
             Next Generation Transit Sur<span class="black-letter">v</span>ey
         </span><br>
         <div class="button-container" style="display: flex; gap: 10px; margin-top: 10px;">
-            <a href="/pages/tabs/observatory.html" class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off button">Observatory</a>
-            <a href="/pages/tabs/research.html" class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off button">Research</a>
+            <a href="/pages/tabs/observatory.html" class="w3-button w3-white w3-padding-large w3-large w3-opacity button">Observatory</a>
+            <a href="/pages/tabs/research.html" class="w3-button w3-white w3-padding-large w3-large w3-opacity button">Research</a>
         </div>
         <div class="working-groups-container" style="display: flex; align-items: center; margin-top: 55px;">
             <span class="working-groups-title" style="font-size: 1.5em; color: white; margin-right: 20px;">Working groups</span>
@@ -48,62 +48,63 @@
 </header>
 
 <style>
-  .social-icon i {
-    color: white;
-    transition: color 0.3s ease;
-  }
+    .social-icon i {
+        color: white;
+        transition: color 0.3s ease;
+    }
 
-.social-icon i {
-    color: white;
-    transition: color 0.3s ease;
-}
+    .social-icon i:hover {
+        color: grey;
+    }
 
-.social-icon i:hover {
-    color: grey;
-}
+    .w3-display-topleft {
+        display: flex;
+        gap: 20px; /* Adjust the gap value as needed */
+    }
 
-.w3-display-topleft {
-    display: flex;
-    gap: 20px; /* Adjust the gap value as needed */
-}
+    .button-container .button {
+        flex: 0 1 auto;
+        width: 150px; /* Adjust width as needed */
+        text-align: center;
+        background-color: rgba(105, 105, 105, 0.7); /* Dark grey with slight transparency */
+        transition: background-color 0.3s ease; /* Transition for background-color only */
+    }
 
-.button-container .button {
-    flex: 0 1 auto;
-    width: 150px; /* Adjust width as needed */
-    text-align: center;
-}
+    .button-container .button:hover {
+        background-color: rgba(105, 105, 105, 0.9); /* Slightly less transparent on hover */
+    }
 
+    .black-letter {
+        color: black;
+    }
 
-.black-letter {
-    color: black;
-}
+    .working-group-box {
+        width: 100px; /* Adjust width as needed */
+        height: 100px; /* Adjust height as needed */
+        background-color: rgba(105, 105, 105, 0.7); /* Dark grey with slight transparency */
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 0.9em;
+        text-decoration: none; /* Remove underline from links */
+        transition: background-color 0.3s ease; /* Existing transition */
+    }
 
-.working-group-box {
-    width: 100px; /* Adjust width as needed */
-    height: 100px; /* Adjust height as needed */
-    background-color: rgba(105, 105, 105, 0.7); /* Dark grey with slight transparency */
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: 0.9em;
-    text-decoration: none; /* Remove underline from links */
-    transition: background-color 0.3s ease; /* Existing transition */
-}
+    .working-group-box:hover {
+        background-color: rgba(105, 105, 105, 0.9); /* Darker grey on hover */
+    }
 
-.working-group-box:hover {
-    background-color: rgba(105, 105, 105, 0.9); /* Darker grey on hover */
-}
+    .working-groups-title {
+        font-size: 1.5em; /* Adjust the font size as needed */
+        color: white;
+        margin-right: 20px; /* Space between title and boxes */
+    }
 
-.working-groups-title {
-    font-size: 1.5em; /* Adjust the font size as needed */
-    color: white;
-    margin-right: 20px; /* Space between title and boxes */
-}
-
-.boxes-container {
-    display: flex;
-    gap: 10px; /* Adjust the gap between boxes as needed */
-}
+    .boxes-container {
+        display: flex;
+        gap: 10px; /* Adjust the gap between boxes as needed */
+    }
 </style>
+
