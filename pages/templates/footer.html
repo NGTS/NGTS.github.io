@@ -9,7 +9,7 @@
     height: 1px;">
 <footer class="w3-center w3-white w3-padding-0">
   
-  <div class="w3-row-padding w3-center" style="margin-top:64px">
+<!--  <div class="w3-row-padding w3-center" style="margin-top:64px">
     <div class="w3-quarter">
       <i class="fa fa-wpexplorer w3-margin-bottom w3-jumbo w3-center"></i>
       <p class="w3-large">Capability</p>
@@ -37,7 +37,49 @@
         <a href="/pages/tabs/contact_page.html">Contact us</a> if you'd like to use NGTS for your own research. 
         <!-- Check out our <a href="/pages/tabs/working_groups_page.html">science topics page!</a> --> </p>
     </div>
+  </div> -->
+
+
+<div class="w3-row-padding w3-center" style="margin-top:64px">
+  <div class="box-container">
+    <div class="w3-quarter">
+      <i class="fa fa-wpexplorer w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">Capability</p>
+      <p>
+        We have 12 robotic telescopes optimised for exoplanet transits located at the best astronomical site in the world.
+      </p>
+    </div>
   </div>
+  
+  <div class="box-container">
+    <div class="w3-quarter">
+      <i class="fa fa-balance-scale w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Stability</p>
+      <p>
+        Our guiding is good to hundreths of a pixel, 
+        resulting in photometric precision rivaling space observatories. 
+      </p>
+    </div>
+  </div>
+  
+  <div class="box-container">
+    <div class="w3-quarter">
+      <i class="fa fa-newspaper-o w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Publications</p>
+      <p>Over 100 publications using NGTS data so far, check out our <a href="/pages/tabs/publications_page.html">publications page!</a></p>
+    </div>
+  </div>
+  
+  <div class="box-container">
+    <div class="w3-quarter">
+      <i class="fa fa-check-square-o w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Diverse research</p>
+      <p>As well as planets, we are interested in anything that varies,from stellar flares to supernovae! 
+        <a href="/pages/tabs/contact_page.html">Contact us</a> if you'd like to use NGTS for your own research. 
+        <!-- Check out our <a href="/pages/tabs/working_groups_page.html">science topics page!</a> --> </p>
+    </div>
+  </div>
+</div>
 
   
   
@@ -57,6 +99,26 @@
     </div>
 
 
+<style>
+  .box-container {
+    width: 25%; /* Each box takes up 25% of the container width */
+    padding: 20px; /* Adjust padding as needed */
+    background-color: #f0f0f0; /* Light grey background */
+    border: 2px solid #ccc; /* Dark grey border with 2px thickness */
+    box-sizing: border-box; /* Ensures padding is included in the width */
+    display: inline-block; /* Ensures boxes are displayed horizontally */
+    vertical-align: top; /* Aligns boxes at the top */
+    margin-bottom: 20px; /* Adds space between boxes */
+  }
+
+  /* Optional: Adjust styles for content within each box if needed */
+  .box-container .w3-quarter {
+    text-align: center; /* Align text to the left within the box */
+  }
+</style>
+
+
+
 </footer>
    
   <script>
@@ -67,7 +129,8 @@
     var captionText = document.getElementById("caption");
     captionText.innerHTML = element.alt;
   }
-  
+
+      
   
   // Toggle between showing and hiding the sidebar when clicking the menu icon
   var mySidebar = document.getElementById("mySidebar");
