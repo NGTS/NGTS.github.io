@@ -13,23 +13,30 @@
   <h3 class="w3-center">WORKING GROUPS</h3>
 
 <div class="working-groups-container" style="margin-top: 10px;">
-        <div class="boxes-container" style="display: flex; gap: 30px; margin-top: 10px; justify-content: center;">
-          <a href="/pages/tabs/wgs/box1.html" class="working-group-box">Long-period&nbsp;<br>planets</a>
-          <a href="/pages/tabs/wgs/box2.html" class="working-group-box">TESS and&nbsp;<br>follow-up</a>
-          <a href="/pages/tabs/wgs/box3.html" class="working-group-box">Bright&nbsp;<br>stars</a>
-          <a href="/pages/tabs/wgs/box4.html" class="working-group-box">Flares</a>
-          <a href="/pages/tabs/wgs/box5.html" class="working-group-box">Clusters</a>
-          <a href="/pages/tabs/wgs/box6.html" class="working-group-box">Binaries</a>
-          <a href="/pages/tabs/wgs/box7.html" class="working-group-box">White&nbsp;<br>dwarfs</a>
-          <a href="/pages/tabs/wgs/box8.html" class="working-group-box">Citizen&nbsp;<br>science</a>
-        </div>
-      </div>
-  </div>
+    <div class="boxes-container" style="display: flex; gap: 30px; margin-top: 10px; justify-content: center;">
+        <div class="working-group-box" onclick="toggleText('box1-text')">Long-period&nbsp;<br>planets</div>
+        <div class="working-group-box" onclick="toggleText('box2-text')">TESS and&nbsp;<br>follow-up</div>
+        <div class="working-group-box" onclick="toggleText('box3-text')">Bright&nbsp;<br>stars</div>
+        <div class="working-group-box" onclick="toggleText('box4-text')">Flares</div>
+        <div class="working-group-box" onclick="toggleText('box5-text')">Clusters</div>
+        <div class="working-group-box" onclick="toggleText('box6-text')">Binaries</div>
+        <div class="working-group-box" onclick="toggleText('box7-text')">White&nbsp;<br>dwarfs</div>
+        <div class="working-group-box" onclick="toggleText('box8-text')">Citizen&nbsp;<br>science</div>
+    </div>
+    <div id="box1-text" class="hidden-text">Content for Long-period planets.</div>
+    <div id="box2-text" class="hidden-text">Content for TESS and follow-up.</div>
+    <div id="box3-text" class="hidden-text">Content for Bright stars.</div>
+    <div id="box4-text" class="hidden-text">Content for Flares.</div>
+    <div id="box5-text" class="hidden-text">Content for Clusters.</div>
+    <div id="box6-text" class="hidden-text">Content for Binaries.</div>
+    <div id="box7-text" class="hidden-text">Content for White dwarfs.</div>
+    <div id="box8-text" class="hidden-text">Content for Citizen science.</div>
+</div>
   
   <hr style="border: 0;
   clear:both;
   display:block;
-  width: 96%;               
+  width: 99%;               
   background-color:black;
   height: 1px;">
  
@@ -89,7 +96,7 @@
 
 <style>
 
-  .working-group-box {
+ .working-group-box {
     width: 120px; /* Adjust width as needed */
     height: 120px; /* Adjust height as needed */
     background-color: rgba(105, 105, 105, 0.7); /* Dark grey with slight transparency */
@@ -101,17 +108,28 @@
     font-size: 0.98em;
     text-decoration: none; /* Remove underline from links */
     transition: background-color 0.3s ease;
-  }
+    cursor: pointer; /* Pointer cursor to indicate clickable */
+}
 
-  .working-group-box:hover {
+.working-group-box:hover {
     background-color: rgba(105, 105, 105, 0.9); /* Darker grey on hover */
-  }
+}
 
-  .boxes-container {
+.boxes-container {
     display: flex;
     gap: 10px; /* Adjust the gap between boxes as needed */
     margin-top: 10px;
-  }
+}
+
+.hidden-text {
+    display: none; /* Initially hidden */
+    color: white; /* Text color */
+    margin-top: 10px; /* Space between text sections */
+    padding: 10px; /* Padding around text */
+    background-color: rgba(0, 0, 0, 0.5); /* Background color with transparency */
+    border-radius: 5px; /* Rounded corners */
+}
+  
 </style>
 
 </div>  
