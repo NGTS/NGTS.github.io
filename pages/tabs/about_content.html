@@ -130,26 +130,19 @@
     border-radius: 5px; /* Rounded corners */
     width: 30%; /* Half the page width */
     text-align: center; /* Center the text */
-    opacity: 0; /* Initial opacity */
-    transition: opacity 0.3s ease; /* Smooth transition for opacity */
-}
-
-.hidden-text.show {
-    display: block; /* Show the element */
-    opacity: 1; /* Fully visible */
 }
   
 </style>
 
 <script>
   function toggleText(id) {
-        const element = document.getElementById(id);
-        if (element.classList.contains('show')) {
-            element.classList.remove('show');
-        } else {
-            element.classList.add('show');
-        }
+    const element = document.getElementById(id);
+    if (element.style.display === 'none' || element.style.display === '') {
+        element.style.display = 'block';
+    } else {
+        element.style.display = 'none';
     }
+}
 </script>
 
 </div>  
