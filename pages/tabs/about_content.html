@@ -32,7 +32,7 @@
   </p> -->
 
 
-  <div class="w3-row-padding w3-center" style="margin-top:64px">
+  <div class="w3-row-padding w3-center" style="margin-top:30px">
     <div class="w3-half w3-left-align">
       <p>
         NGTS is located at the 
@@ -67,11 +67,49 @@
   height: 1px;">
 
   <h3 class="w3-center">WORKING GROUPS</h3>
-    <div class="w3-xlarge w3-section w3-center">
-      BOXES BOXES BOXES
+      <div class="working-groups-container" style="display: flex; align-items: center; margin-top: 60px;">
+            <span class="working-groups-title" style="font-size: 1.5em; color: white; margin-right: 40px;">Working groups</span>
+            <div class="boxes-container" style="display: flex; gap: 20px;">
+                <a href="/pages/tabs/wgs/box1.html" class="working-group-box">Long-period planets</a>
+                <a href="/pages/tabs/wgs/box2.html" class="working-group-box">TESS and follow-up</a>
+                <a href="/pages/tabs/wgs/box3.html" class="working-group-box">Bright stars</a>
+                <a href="/pages/tabs/wgs/box4.html" class="working-group-box">Flares</a>
+                <a href="/pages/tabs/wgs/box5.html" class="working-group-box">Clusters</a>
+                <a href="/pages/tabs/wgs/box6.html" class="working-group-box">Binaries</a>
+                <a href="/pages/tabs/wgs/box7.html" class="working-group-box">White dwarfs</a>
+                <a href="/pages/tabs/wgs/box8.html" class="working-group-box">Citizen&nbsp;<br>science</a>
+            </div>
+        </div>
     </div>
 
 
+.working-group-box {
+        width: 100px; /* Adjust width as needed */
+        height: 100px; /* Adjust height as needed */
+        background-color: rgba(105, 105, 105, 0.7); /* Dark grey with slight transparency */
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 0.95em;
+        text-decoration: none; /* Remove underline from links */
+        transition: background-color 0.3s ease; /* Existing transition */
+    }
 
+    .working-group-box:hover {
+        background-color: rgba(105, 105, 105, 0.9); /* Darker grey on hover */
+    }
+
+    .working-groups-title {
+        font-size: 1.5em; /* Adjust the font size as needed */
+        color: white;
+        margin-right: 20px; /* Space between title and boxes */
+    }
+
+    .boxes-container {
+        display: flex;
+        gap: 10px; /* Adjust the gap between boxes as needed */
+    }
 
 </div>  
