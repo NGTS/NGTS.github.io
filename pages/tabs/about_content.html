@@ -31,31 +31,31 @@
       <br> TEXT TEXT TEXT
     </div>
   
-    <div id="box2-text" class="hidden-text">
+    <div id="box2-text" class="hidden-text working-group-content">
       Content for TESS and follow-up.
     </div>
   
-    <div id="box3-text" class="hidden-text">
+    <div id="box3-text" class="hidden-text working-group-content">
       Content for Bright stars.
     </div>
   
-    <div id="box4-text" class="hidden-text">
+    <div id="box4-text" class="hidden-text working-group-content">
       Content for Flares.
     </div>
   
-    <div id="box5-text" class="hidden-text">
+    <div id="box5-text" class="hidden-text working-group-content">
       Content for Clusters.
     </div>
   
-    <div id="box6-text" class="hidden-text">
+    <div id="box6-text" class="hidden-text working-group-content">
       Content for Binaries.
     </div>
   
-    <div id="box7-text" class="hidden-text">
+    <div id="box7-text" class="hidden-text working-group-content">
       Content for White dwarfs.
     </div>
   
-    <div id="box8-text" class="hidden-text">
+    <div id="box8-text" class="hidden-text working-group-content">
       Content for Citizen science.
     </div>
   
@@ -166,14 +166,16 @@
 </style>
 
 <script>
-  function toggleText(id) {
-    const element = document.getElementById(id);
-    if (element.style.display === 'none' || element.style.display === '') {
-        element.style.display = 'block';
-    } else {
-        element.style.display = 'none';
+    function toggleText(id) {
+        const allTextBoxes = document.querySelectorAll('.working-group-content');
+        allTextBoxes.forEach(box => {
+            if (box.id === id) {
+                box.style.display = box.style.display === 'block' ? 'none' : 'block';
+            } else {
+                box.style.display = 'none';
+            }
+        });
     }
-}
 </script>
 
 </div>  
