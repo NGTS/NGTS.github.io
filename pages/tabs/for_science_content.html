@@ -1,107 +1,99 @@
-<div class="w3-container w3-white" style="padding:80px 20px">
-  <p class="w3-xxxlarge w3-hide-big w3-center"> THE NGTS OBSERVATORY </p>
-  <hr style="border: 0;
-  clear:both;
-  display:block;
-  width: 96%;               
-  background-color:black;
-  height: 1px;">
-
-  <meta charset="UTF-8">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGTS Observatory</title>
+    <style>
+        ul {
+            list-style-type: none; /* Remove default bullets */
+            padding: 0;
+        }
 
-  <div class="w3-third" style="padding:1%">
-    <p class="w3-large">THE OBSERVATORY</p>
-    <hr style="border: 0; clear:both; display:block; width: 50%; background-color:black; height: 1px;">
-    <img src="/images/NGTS/eso1502c.jpg" alt="John" style="width:90%"  class="standard-image">
-    <p class="w3-normal w3-left-align">
-        <ul class="observatory-list">
-            <li>First item</li>
-            <li>Second item</li>
-            <li>Third item</li>
-        </ul>
-  </p>
-  </div>
+        .observatory-list li {
+            background-color: #FFD6FF; /* Background color for observatory list items */
+            margin: 10px 0; /* Space between items */
+            padding: 10px; /* Space inside each item */
+            border-radius: 5px; /* Rounded edges */
+            border: 1px solid #ccc; /* Optional: Border around the box */
+            width: 90%; /* Match the width of the image */
+        }
 
+        .telescopes-list li {
+            background-color: #C8B6FF; /* Background color for telescope list items */
+            margin: 10px 0; /* Space between items */
+            padding: 10px; /* Space inside each item */
+            border-radius: 5px; /* Rounded edges */
+            border: 1px solid #ccc; /* Optional: Border around the box */
+            width: 90%; /* Match the width of the image */
+        }
 
-  <div class="w3-third" style="padding:1%">
-    <p class="w3-large">THE TELESCOPES</p>
-    <hr style="border: 0;
-    clear:both;
-    display:block;
-    width: 50%;               
-    background-color:black;
-    height: 1px;">
-    <img src="/images/NGTS/ngts_telescopes.jpg" alt="John" style="width:90%"  class="standard-image">
-    <p class="w3-normal  w3-left-align">
-      <ul class="telescopes-list">
-            <li>First item</li>
-            <li>Second item</li>
-            <li>Third item</li>
-        </ul>
-  </p>
-  </div>
+        .cameras-list li {
+            background-color: #BBD0FF; /* Background color for cameras list items */
+            margin: 10px 0; /* Space between items */
+            padding: 10px; /* Space inside each item */
+            border-radius: 5px; /* Rounded edges */
+            border: 1px solid #ccc; /* Optional: Border around the box */
+            width: 90%; /* Match the width of the image */
+        }
 
+        .standard-image {
+            width: 100%; /* Adjust width to fit the container */
+            height: auto; /* Maintain aspect ratio */
+            max-width: 300px; /* Optional: Limit maximum width */
+            max-height: 200px; /* Optional: Limit maximum height */
+            object-fit: cover; /* Optional: Cover the space while preserving aspect ratio */
+        }
+    </style>
+</head>
 
-  <div class="w3-third" style="padding:1%">
-    <p class="w3-large">THE CAMERAS</p>
-    <hr style="border: 0;
-    clear:both;
-    display:block;
-    width: 50%;               
-    background-color:black;
-    height: 1px;">
-    <img src="/images/NGTS/qe_camera.jpeg" alt="John" style="width:90%"  class="standard-image">
-    <p class="w3-normal  w3-left-align"> 
-      <ul class="cameras-list">
-            <li>First item</li>
-            <li>Second item</li>
-            <li>Third item</li>
-        </ul>
-  </p>
-  </div>
+  
+<body>
+    <div class="w3-container w3-white" style="padding:80px 20px">
+        <p class="w3-xxxlarge w3-hide-big w3-center">THE NGTS OBSERVATORY</p>
+        <hr style="border: 0; clear:both; display:block; width: 96%; background-color:black; height: 1px;">
 
+        <div class="w3-third" style="padding:1%">
+            <p class="w3-large">THE OBSERVATORY</p>
+            <hr style="border: 0; clear:both; display:block; width: 50%; background-color:black; height: 1px;">
+            <img src="/images/NGTS/eso1502c.jpg" alt="John" class="standard-image">
+            <p class="w3-normal w3-left-align">
+                <ul class="observatory-list">
+                    <li>First item</li>
+                    <li>Second item</li>
+                    <li>Third item</li>
+                </ul>
+            </p>
+        </div>
 
-<style>
-    ul {
-        list-style-type: none; /* Remove default bullets */
-        padding: 0;
-    }
+        <div class="w3-third" style="padding:1%">
+            <p class="w3-large">THE TELESCOPES</p>
+            <hr style="border: 0; clear:both; display:block; width: 50%; background-color:black; height: 1px;">
+            <img src="/images/NGTS/ngts_telescopes.jpg" alt="John" class="standard-image">
+            <p class="w3-normal w3-left-align">
+                <ul class="telescopes-list">
+                    <li>First item</li>
+                    <li>Second item</li>
+                    <li>Third item</li>
+                </ul>
+            </p>
+        </div>
 
-    .observatory-list li {
-        background-color: #FFD6FF; /* Background color for observatory list items */
-        margin: 10px 0; /* Space between items */
-        padding: 10px; /* Space inside each item */
-        border-radius: 5px; /* Rounded edges */
-        border: 1px solid #ccc; /* Optional: Border around the box */
-        width: 90%; /* Match the width of the image */
-    }
-
-    .telescopes-list li {
-        background-color: #C8B6FF; /* Background color for telescope list items */
-        margin: 10px 0; /* Space between items */
-        padding: 10px; /* Space inside each item */
-        border-radius: 5px; /* Rounded edges */
-        border: 1px solid #ccc; /* Optional: Border around the box */
-        width: 90%; /* Match the width of the image */
-
-      .cameras-list li {
-        background-color: #BBD0FF; /* Background color for cameras list items */
-        margin: 10px 0; /* Space between items */
-        padding: 10px; /* Space inside each item */
-        border-radius: 5px; /* Rounded edges */
-        border: 1px solid #ccc; /* Optional: Border around the box */
-        width: 90%; /* Match the width of the image */
-    }
-
-    .standard-image {
-        width: 100%; /* Adjust width to fit the container */
-        height: auto; /* Maintain aspect ratio */
-        max-width: 300px; /* Optional: Limit maximum width */
-        max-height: 200px; /* Optional: Limit maximum height */
-        object-fit: cover; /* Optional: Cover the space while preserving aspect ratio */
-      
-</style>
+        <div class="w3-third" style="padding:1%">
+            <p class="w3-large">THE CAMERAS</p>
+            <hr style="border: 0; clear:both; display:block; width: 50%; background-color:black; height: 1px;">
+            <img src="/images/NGTS/qe_camera.jpeg" alt="John" class="standard-image">
+            <p class="w3-normal w3-left-align">
+                <ul class="cameras-list">
+                    <li>First item</li>
+                    <li>Second item</li>
+                    <li>Third item</li>
+                </ul>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
 
 
 
