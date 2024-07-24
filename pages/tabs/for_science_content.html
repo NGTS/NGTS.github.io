@@ -15,13 +15,13 @@
     <hr style="border: 0; clear:both; display:block; width: 50%; background-color:black; height: 1px;">
     <img src="/images/NGTS/eso1502c.jpg" alt="John" style="width:90%">
     <p class="w3-normal w3-left-align">
-        <ul>
+        <ul class="observatory-list">
             <li>First item</li>
             <li>Second item</li>
             <li>Third item</li>
         </ul>
-    </p>
-</div>
+  </p>
+  </div>
 
       
 <!-- The selected site for the observatory is 900 m downhill from the VISTA telescope at an altitude of 2440m. A pre-existing dirt 
@@ -79,7 +79,13 @@ using a pair of Icron Ranger USB-to-fibre converters.
     height: 1px;">
     <img src="/images/NGTS/ngts_telescopes.jpg" alt="John" style="width:90%">
     <p class="w3-normal  w3-left-align">
-      
+      <ul class="telescopes-list">
+            <li>First item</li>
+            <li>Second item</li>
+            <li>Third item</li>
+        </ul>
+  </p>
+  </div>
       
       
       <!-- The NGTS telescopes are each mounted on an equatorial fork mount made by Optical Mechanics Inc.,5 
@@ -129,8 +135,13 @@ using a pair of Icron Ranger USB-to-fibre converters.
     height: 1px;">
     <img src="/images/NGTS/qe_camera.jpeg" alt="John" style="width:90%">
     <p class="w3-normal  w3-left-align"> 
-      
-      
+      <ul class="cameras-list">
+            <li>First item</li>
+            <li>Second item</li>
+            <li>Third item</li>
+        </ul>
+  </p>
+  </div>
       
       <!-- Each of the twelve NGTS telescopes is fitted with a 2048x2048 pixel CCD manufactured by e2v technologies plc3. 
       These are the deep depletion version of the CCD42-40 back-illuminated CCD sensor, which provides excellent quantum 
@@ -172,12 +183,29 @@ using a pair of Icron Ranger USB-to-fibre converters.
         padding: 0;
     }
 
-    li {
-        background-color: #ADD8E6; /* Background color */
+    .observatory-list li {
+        background-color: #FFD6FF; /* Background color for observatory list items */
         margin: 10px 0; /* Space between items */
         padding: 10px; /* Space inside each item */
         border-radius: 5px; /* Rounded edges */
         border: 1px solid #ccc; /* Optional: Border around the box */
-        width: 90%; /* Make the width the same as the image */
+        width: 90%; /* Match the width of the image */
+    }
+
+    .telescopes-list li {
+        background-color: #C8B6FF; /* Background color for telescope list items */
+        margin: 10px 0; /* Space between items */
+        padding: 10px; /* Space inside each item */
+        border-radius: 5px; /* Rounded edges */
+        border: 1px solid #ccc; /* Optional: Border around the box */
+        width: 90%; /* Match the width of the image */
+
+      .cameras-list li {
+        background-color: #BBD0FF; /* Background color for cameras list items */
+        margin: 10px 0; /* Space between items */
+        padding: 10px; /* Space inside each item */
+        border-radius: 5px; /* Rounded edges */
+        border: 1px solid #ccc; /* Optional: Border around the box */
+        width: 90%; /* Match the width of the image */
     }
 </style>
