@@ -13,7 +13,7 @@
   <div class="w3-third" style="padding:1%">
     <p class="w3-large">THE OBSERVATORY</p>
     <hr style="border: 0; clear:both; display:block; width: 50%; background-color:black; height: 1px;">
-    <img src="/images/NGTS/eso1502c.jpg" alt="John" style="width:90%">
+    <img src="/images/NGTS/eso1502c.jpg" alt="John" style="width:90%"  class="standard-image">
     <p class="w3-normal w3-left-align">
         <ul class="observatory-list">
             <li>First item</li>
@@ -77,7 +77,7 @@ using a pair of Icron Ranger USB-to-fibre converters.
     width: 50%;               
     background-color:black;
     height: 1px;">
-    <img src="/images/NGTS/ngts_telescopes.jpg" alt="John" style="width:90%">
+    <img src="/images/NGTS/ngts_telescopes.jpg" alt="John" style="width:90%"  class="standard-image">
     <p class="w3-normal  w3-left-align">
       <ul class="telescopes-list">
             <li>First item</li>
@@ -133,7 +133,7 @@ using a pair of Icron Ranger USB-to-fibre converters.
     width: 50%;               
     background-color:black;
     height: 1px;">
-    <img src="/images/NGTS/qe_camera.jpeg" alt="John" style="width:90%">
+    <img src="/images/NGTS/qe_camera.jpeg" alt="John" style="width:90%"  class="standard-image">
     <p class="w3-normal  w3-left-align"> 
       <ul class="cameras-list">
             <li>First item</li>
@@ -208,4 +208,12 @@ using a pair of Icron Ranger USB-to-fibre converters.
         border: 1px solid #ccc; /* Optional: Border around the box */
         width: 90%; /* Match the width of the image */
     }
+
+    .standard-image {
+        width: 100%; /* Adjust width to fit the container */
+        height: auto; /* Maintain aspect ratio */
+        max-width: 300px; /* Optional: Limit maximum width */
+        max-height: 200px; /* Optional: Limit maximum height */
+        object-fit: cover; /* Optional: Cover the space while preserving aspect ratio */
+      
 </style>
