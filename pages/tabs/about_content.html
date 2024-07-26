@@ -14,17 +14,18 @@
 
 <div class="working-groups-container" style="margin-top: 10px;">
     <div class="boxes-container" style="display: flex; gap: 30px; margin-top: 20px; justify-content: center;">
-        <div class="working-group-box" onclick="toggleText('box1-text')">Long-period&nbsp;<br>planets</div>
-        <div class="working-group-box" onclick="toggleText('box2b-text')">NGTS planets&nbsp;<br>and follow-up</div>
-        <div class="working-group-box" onclick="toggleText('box3-text')">Bright&nbsp;<br>stars</div>
-        <div class="working-group-box" onclick="toggleText('box4-text')">Flares</div>
-        <div class="working-group-box" onclick="toggleText('box5-text')">Clusters and&nbsp;<br>young stars</div>
-        <div class="working-group-box" onclick="toggleText('box6-text')">Binaries</div>
-        <div class="working-group-box" onclick="toggleText('box7-text')">White&nbsp;<br>dwarfs</div>
-        <div class="working-group-box" onclick="toggleText('box8-text')">Citizen&nbsp;<br>science</div>
-        <div class="working-group-box" onclick="toggleText('box9-text')">PLATO</div>
-        <div class="working-group-box" onclick="toggleText('box10-text')">Early-career&nbsp;<br>researchers</div>
+        <div class="working-group-box box1" onclick="toggleText('box1-text')">Long-period&nbsp;<br>planets</div>
+        <div class="working-group-box box2" onclick="toggleText('box2b-text')">NGTS planets&nbsp;<br>and follow-up</div>
+        <div class="working-group-box box3" onclick="toggleText('box3-text')">Bright&nbsp;<br>stars</div>
+        <div class="working-group-box box4" onclick="toggleText('box4-text')">Flares</div>
+        <div class="working-group-box box5" onclick="toggleText('box5-text')">Clusters and&nbsp;<br>young stars</div>
+        <div class="working-group-box box6" onclick="toggleText('box6-text')">Binaries</div>
+        <div class="working-group-box box7" onclick="toggleText('box7-text')">White&nbsp;<br>dwarfs</div>
+        <div class="working-group-box box8" onclick="toggleText('box8-text')">Citizen&nbsp;<br>science</div>
+        <div class="working-group-box box9" onclick="toggleText('box9-text')">PLATO</div>
+        <div class="working-group-box box10" onclick="toggleText('box10-text')">Early-career&nbsp;<br>researchers</div>
     </div>
+</div>
   
     <div id="box1-text" class="hidden-text working-group-content">
       <p class="w3-large" style="margin-bottom: 5px;"> Long-period planets </p>
@@ -186,10 +187,9 @@
 
 <style>
 
- .working-group-box {
+.working-group-box {
     width: 120px; /* Adjust width as needed */
     height: 120px; /* Adjust height as needed */
-    background-color: rgba(105, 105, 105, 0.7); /* Dark grey with slight transparency */
     color: white;
     display: flex;
     border-radius: 5px; /* Rounded corners */
@@ -202,8 +202,21 @@
     cursor: pointer; /* Pointer cursor to indicate clickable */
 }
 
+/* Define the unique background colors for each box */
+.box1 { background-color: #FF5733; }
+.box2 { background-color: #33FF57; }
+.box3 { background-color: #3357FF; }
+.box4 { background-color: #FF33A1; }
+.box5 { background-color: #FF8C33; }
+.box6 { background-color: #8C33FF; }
+.box7 { background-color: #33FFF5; }
+.box8 { background-color: #FFC300; }
+.box9 { background-color: #DAF7A6; }
+.box10 { background-color: #FF5733; }
+
+/* Common hover effect */
 .working-group-box:hover {
-    background-color: rgba(105, 105, 105, 0.9); /* Darker grey on hover */
+    background-color: #D3D3D3; /* Light grey on hover */
 }
 
 .boxes-container {
