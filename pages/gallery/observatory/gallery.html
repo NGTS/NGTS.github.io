@@ -1,15 +1,45 @@
 <div class="w3-container" style="padding:80px 20px" id="team">
   <p class="w3-xxxlarge w3-hide-big w3-center">The Observatory</p>
-<br>
-  <hr style="border: 0;
-  clear:both;
-  display:block;
-  width: 96%;               
-  background-color:black;
-  height: 1px;">
-
+  <br>
+  <hr style="border: 0; clear: both; display: block; width: 96%; background-color: black; height: 1px;">
   
-    <p class="w3-center"> 
-      <img src="/pages/gallery/observatory/ngts_enclosure.png" alt="NGTS enclosure" style="width:500px">
-      <img src="/pages/gallery/observatory/ngts_enclosure.png" alt="NGTS enclosure" style="width:500px">
-  </div>  
+  <div class="gallery-container">
+    <div class="image-box">
+      <img src="/pages/gallery/observatory/ngts_enclosure.png" alt="NGTS enclosure">
+      <div class="description-box">NGTS enclosure</div>
+    </div>
+    <div class="image-box">
+      <img src="/pages/gallery/observatory/ngts_enclosure.png" alt="NGTS enclosure">
+      <div class="description-box">NGTS enclosure</div>
+    </div>
+  </div>
+</div>
+
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.image-box {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.image-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.description-box {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    text-align: center;
+}
