@@ -10,22 +10,59 @@
     background-color:black;
     height: 1px;">
     <p class="w3-xlarge w3-hide-big w3-center"> PARANAL LIVE WEATHER</p>
-    <iframe src="https://www.meteoblue.com/en/weather/widget/seeing/cerro-paranal_chile_3877203?geoloc=fixed&noground=0"  
-    frameborder="0" scrolling="NO" allowtransparency="true" 
-    sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox" 
-    style="width: 24%; height: 768px">
-    </iframe>
-    <div><!-- DO NOT REMOVE THIS LINK -->
-        <a href="https://www.meteoblue.com/en/weather/forecast/seeing/cerro-paranal_chile_3877203?utm_source=seeing_widget&utm_medium=linkus&utm_content=seeing&utm_campaign=Weather%2BWidget" 
-            target="_blank" rel="noopener">meteoblue</a>
+    <div class="flex-container">
+        <div class="iframe-container widget">
+            <iframe src="https://www.meteoblue.com/en/weather/widget/seeing/cerro-paranal_chile_3877203?geoloc=fixed&noground=0"  
+                frameborder="0" scrolling="NO" allowtransparency="true" 
+                sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox" 
+                style="width: 100%; height: 768px">
+            </iframe>
+            <div><!-- DO NOT REMOVE THIS LINK -->
+                <a href="https://www.meteoblue.com/en/weather/forecast/seeing/cerro-paranal_chile_3877203?utm_source=seeing_widget&utm_medium=linkus&utm_content=seeing&utm_campaign=Weather%2BWidget" 
+                    target="_blank" rel="noopener">meteoblue</a>
+            </div>
+        </div>
+        <div class="weather-widget widget">
+            <a class="weatherwidget-io" href="https://forecast7.com/en/n23d65n70d40/antofagasta/" data-label_1="ANTOFAGASTA" data-label_2="WEATHER" data-font="Roboto" data-icons="Climacons Animated" data-theme="original">ANTOFAGASTA WEATHER</a>
+            <script>
+                !function(d,s,id){
+                    var js,fjs=d.getElementsByTagName(s)[0];
+                    if(!d.getElementById(id)){
+                        js=d.createElement(s);
+                        js.id=id;
+                        js.src='https://weatherwidget.io/js/widget.min.js';
+                        fjs.parentNode.insertBefore(js,fjs);
+                    }
+                }(document,'script','weatherwidget-io-js');
+            </script>
+            <iframe src="https://www.meteoblue.com/en/weather/maps/widget/cerro-paranal_chile_3877203?windAnimation=0&windAnimation=1&gust=0&gust=1&satellite=0&satellite=1&cloudsAndPrecipitation=0&cloudsAndPrecipitation=1&temperature=0&temperature=1&sunshine=0&sunshine=1&extremeForecastIndex=0&extremeForecastIndex=1&geoloc=fixed&tempunit=C&windunit=km%252Fh&lengthunit=metric&zoom=5&autowidth=auto" 
+                frameborder="0" scrolling="NO" allowtransparency="true" 
+                sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox" 
+                style="width: 100%; height: 728px">
+            </iframe>
+            <div><!-- DO NOT REMOVE THIS LINK -->
+                <a href="https://www.meteoblue.com/en/weather/maps/cerro-paranal_chile_3877203?utm_source=weather_widget&utm_medium=linkus&utm_content=map&utm_campaign=Weather%2BWidget" 
+                    target="_blank" rel="noopener">meteoblue</a>
+            </div>
+        </div>
     </div>
 
-    <a class="weatherwidget-io" href="https://forecast7.com/en/n23d65n70d40/antofagasta/" data-label_1="ANTOFAGASTA" data-label_2="WEATHER" data-font="Roboto" data-icons="Climacons Animated" data-theme="original" >ANTOFAGASTA WEATHER</a>
-    <script>
-    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
-    </script>
-    <iframe src="https://www.meteoblue.com/en/weather/maps/widget/cerro-paranal_chile_3877203?windAnimation=0&windAnimation=1&gust=0&gust=1&satellite=0&satellite=1&cloudsAndPrecipitation=0&cloudsAndPrecipitation=1&temperature=0&temperature=1&sunshine=0&sunshine=1&extremeForecastIndex=0&extremeForecastIndex=1&geoloc=fixed&tempunit=C&windunit=km%252Fh&lengthunit=metric&zoom=5&autowidth=auto"  frameborder="0" scrolling="NO" allowtransparency="true" sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox" style="width: 74%; height: 728px"></iframe><div><!-- DO NOT REMOVE THIS LINK --><a href="https://www.meteoblue.com/en/weather/maps/cerro-paranal_chile_3877203?utm_source=weather_widget&utm_medium=linkus&utm_content=map&utm_campaign=Weather%2BWidget" target="_blank" rel="noopener">meteoblue</a></div>
+    <style>
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .widget {
+            margin: 10px;
+        }
+        .iframe-container {
+            width: 24%;
+        }
+        .weather-widget {
+            width: 74%;
+        }
 
+        
     
     <hr style="border: 0;
     clear:both;
@@ -69,6 +106,10 @@
         <img id="webcam2" style="width: 24%" src="https://ngts.warwick.ac.uk/prnl/cam2/axis-cgi/jpg/image.cgi">
         <img id="webcam3" style="width: 24%" src="https://ngts.warwick.ac.uk/prnl/cam3/axis-cgi/jpg/image.cgi">
     </div>
+
+
+
+    
     
     <!--<hr style="border: 0;
     clear:both;
