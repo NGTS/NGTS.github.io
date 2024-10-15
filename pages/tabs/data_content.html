@@ -41,39 +41,40 @@
         <p class="w3-xxxlarge w3-hide-big w3-center">NGTS DATA</p>
         <hr style="border: 0; clear:both; display:block; width: 96%; background-color:black; height: 1px;">
 
-        <div class="w3-third" style="padding:1%">
-            <p class="w3-large">ABOUT NGTS DATA</p>
-            <hr style="border: 0; clear:both; display:block; width: 50%; background-color:black; height: 1px;">
-            <img src="/images/NGTS/eso1502c.jpg" alt="John" class="standard-image">
-            <p class="w3-normal w3-left-align">
-                <ul class="about-list">
-                    <li>NGTS is located at the ESO Paranal Observatory in Northern Chile, at an altitude of 2440m.</li>
-                    <li>The 12 telescopes are fully automated and individually controlled.</li>
-                    <li>An on-site weather station monitors the temperature, pressure, wind, humidity and rain, and 
-                        closes the roof automatically in the case of bad weather.</li>
-                    <li>An all-sky camera is installed on the control building roof to detect early signs of cloud.</li>
-                    <li>NGTS also has eight network cameras to monitor the facility,
-                        including three low-light cameras that allow us to monitor the telescopes and roof 
-                        even in dark sky conditions. See the <a href="https://ngtransits.org/pages/tabs/paranal_live_page.html">Paranal Live</a> page!</li>
-                </ul>
-            </p>
-        </div>
+        <!-- Flexbox container to layout the two sections -->
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
 
-        <div class="w3-third" style="padding:1%">
-            <p class="w3-large">ACCESSING NGTS DATA</p>
-            <hr style="border: 0; clear:both; display:block; width: 50%; background-color:black; height: 1px;">
-            <img src="/images/NGTS/ngts_telescopes.jpg" alt="John" class="standard-image">
-            <p class="w3-normal w3-left-align">
-                <ul class="access-list">
-                    <li>NGTS is comprised of 12 20cm Newtonian telescopes on fork mounts that are independently pointed and guided.</li>
-                    <li>The 12 telescopes are arranged in two rows such that NGTS can observe down to approximately 30 degrees of elevation from the horizon.</li>
-                    <li>It provides a combined instantaneous field of view of 96 degrees, and if all telescopes are used simultaneously on a single target 
-                        it has the effective collecting area of a 0.7m telescope.</li>
-                    <li>For targets brighter than G = 12 mag, a single NGTS telescope provides photometric precision of 400 ppm in 30 minutes.</li>
-                    <li>The system autoguides using the science frames to 
-                    ensure sub-pixel guiding over the course of the night.</li>
-                </ul>
-            </p>
+            <!-- Left column with 1/3 width -->
+            <div style="flex: 1 1 30%; padding:1%;">
+                <p class="w3-large">ABOUT NGTS DATA</p>
+                <hr style="border: 0; clear:both; display:block; width: 50%; background-color:black; height: 1px;">
+                <img src="/images/NGTS/eso1502c.jpg" alt="John" class="standard-image" style="width:100%; height:auto;">
+                <p class="w3-normal w3-left-align">
+                    <ul class="about-list">
+                        <li>NGTS is located at the ESO Paranal Observatory in Northern Chile, at an altitude of 2440m.</li>
+                        <li>The 12 telescopes are fully automated and individually controlled.</li>
+                        <li>An on-site weather station monitors the temperature, pressure, wind, humidity, and rain, and closes the roof automatically in the case of bad weather.</li>
+                        <li>An all-sky camera is installed on the control building roof to detect early signs of cloud.</li>
+                        <li>NGTS also has eight network cameras to monitor the facility, including three low-light cameras that allow us to monitor the telescopes and roof even in dark sky conditions. See the <a href="https://ngtransits.org/pages/tabs/paranal_live_page.html">Paranal Live</a> page!</li>
+                    </ul>
+                </p>
+            </div>
+
+            <!-- Right column with 2/3 width -->
+            <div style="flex: 1 1 65%; padding:1%;">
+                <p class="w3-large">ACCESSING NGTS DATA</p>
+                <hr style="border: 0; clear:both; display:block; width: 50%; background-color:black; height: 1px;">
+                <img src="/images/NGTS/ngts_telescopes.jpg" alt="John" class="standard-image" style="width:100%; height:auto;">
+                <p class="w3-normal w3-left-align">
+                    <ul class="access-list">
+                        <li>NGTS is comprised of 12 20cm Newtonian telescopes on fork mounts that are independently pointed and guided.</li>
+                        <li>The 12 telescopes are arranged in two rows such that NGTS can observe down to approximately 30 degrees of elevation from the horizon.</li>
+                        <li>It provides a combined instantaneous field of view of 96 degrees, and if all telescopes are used simultaneously on a single target, it has the effective collecting area of a 0.7m telescope.</li>
+                        <li>For targets brighter than G = 12 mag, a single NGTS telescope provides photometric precision of 400 ppm in 30 minutes.</li>
+                        <li>The system autoguides using the science frames to ensure sub-pixel guiding over the course of the night.</li>
+                    </ul>
+                </p>
+            </div>
         </div>
     </div>
 </body>
