@@ -15,26 +15,38 @@
 
 <!-- FAITH'S NEW STUFF -->
 
+<style>
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  .fade-in {
+    animation: fadeIn 0.5s ease-in-out forwards;
+    opacity: 0; /* Make sure the initial opacity is 0 */
+  }
+</style>
+
 <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
-    <div class="w3-display-topleft w3-text-grey w3-large" style="padding: 100px 48px">
+    <div class="w3-display-topleft w3-text-grey w3-large fade-in" style="padding: 100px 48px">
         <a href="https://twitter.com/NextGenTransits" target="_blank" class="social-icon"><i class="fa fa-twitter fa-3x"></i></a>
         <a href="https://www.instagram.com/ngtransits/" target="_blank" class="social-icon"><i class="fa fa-instagram fa-3x"></i></a>
         <a href="https://www.youtube.com/channel/UCjvz0gKa8LVi7qarhwBGRMg" target="_blank" class="social-icon"><i class="fa fa-youtube fa-3x"></i></a>
     </div>
-    <div class="w3-display-left w3-text-white" style="padding: 24px 48px; margin-top: 70px;">
+    <div class="w3-display-left w3-text-white fade-in" style="padding: 24px 48px; margin-top: 70px;">
         <div class="flex-container" style="display: flex; align-items: center;">
             <span class="w3-jumbo w3-hide-big"> 
                 <img src="/images/logo_colour_large.png" alt="Next Generation Transit Survey Logo" style="width: 500px; height: auto;">
             </span>
         </div>
-        <div class="button-container" style="display: flex; gap: 10px; margin-top: 80px; margin-left: 20px;">
+        <div class="button-container fade-in" style="display: flex; gap: 10px; margin-top: 80px; margin-left: 20px;">
             <a href="/pages/tabs/for_science_page.html" class="w3-button w3-white w3-padding-large w3-large w3-opacity button w3-hover-opacity-off">Observatory</a>
             <a href="/pages/tabs/about_page.html" class="w3-button w3-white w3-padding-large w3-large w3-opacity button w3-hover-opacity-off">Research</a>
             <a href="/pages/tabs/publications_page.html" class="w3-button w3-white w3-padding-large w3-large w3-opacity button w3-hover-opacity-off">Publications</a>
         </div>
     </div> 
 </header>
-</header>
+
 
 <style>
     .social-icon i {
