@@ -1,0 +1,43 @@
+<div class="w3-container" style="padding:80px 20px" id="about">
+    <p class="w3-xxxlarge w3-hide-big w3-center"> Request observations</p>
+ 
+    <p>
+    <b> To request NGTS observations either fill in the form below or email the information specified to the NGTS team or send it to us on slack.
+    <br>
+</b></p>
+
+<!-- html form for requesting observations -->
+<form>
+    <label for=='pi_name' ><b>PI Name:</b></label>
+    <input type='text' id='pi_name' name='pi_name' required placeholder="e.g. John Smith"><br>
+    
+    <label for='pi_email' ><b>PI Email:</b></label>
+    <input type='email' id='pi_email' name='pi_email' required placeholder="e.g JohnSmith@warwick.ac.uk"><br>
+
+    <label for='science'><b>Science objectives and details:</b> No longer than 2-3 sentences. This will help us prioritise this observation over others in the case of oversubscription.</label><br>
+    <textarea id='science' name='science' rows="4" cols="75" required placeholder="e.g. We have been granted JWST time to perform transmission spectroscopy of WASP-39b. Photometric monitoring with NGTS would allow us to confirm WASP-39 as a relatively inactive star and ensure the JWST observations are not affected by stellar activity"></textarea><br>
+
+    <label for='target_name' ><b>Target Name(s):</b> This should be the TIC, TOI, or other identifiers in the case of stars, or RA/Dec for other objects.</label><br>
+    <textarea id='target_name' name='target_name' rows="4" cols="75" required placeholder="e.g. WASP-39 b (TIC 181949561)"></textarea><br>
+
+    <label for='dates'><b>Dates of the observation nights: </b> An "observation night" is the UTC date when the Sun sets and the night begins. This will typically be the day before the actual event takes place; e.g. if a transit is at 1am UTC, then the observation night begins the day before.</label><br>
+    <textarea id="dates" name="dates" rows="4" cols="75" required placeholder="e.g. 2022-04-30 to 2022-08-30. Transits on 2022-05-10, 2022-05-14, 2022-05-18, 2022-05-22, 2022-05-26, 2022-05-30, 2022-07-23, 2022-07-27 and 2022-07-31"></textarea><br>
+
+    <label for='length'><b>Length of the observations:</b>How long to observe for each night. This is typically 30 minutes for stellar activity monitoring, or the full visibility window for a transit.</label><br>
+    <textarea id='length' name='length' rows="4" cols="75" required placeholder="e.g. 30 mins on nights with no transits expected. 4.8 hrs on nights with transits (2.8hr transits plus 1 hr baseline either side)"></textarea><br>
+
+    <label for='precision'><b>Precision required:</b>The brightness of the star (e.g. V mag) together with e.g. the transit depth in ppm or desired precision in ephemeris.</label>
+    <textarea id='precision' name='precision' rows="4" cols="75" required placeholder="e.g. Vmag=12.095, TESSmag=11.3763, transit depth=145700ppm, expected stellar activity signals on order of ~0.05%"></textarea><br>
+
+    <label for='ntelescopes'><b>Number of telescopes (optional):</b> If possible, both the minimum to make a detection as well as the ideal number to make a strong detection.</label>
+    <input type='text' id='ntelescopes' name='ntelescopes', placeholder="e.g. 1 minimum, 7 ideal"><br>    
+
+    <label for='comments'><b>Additional comments (optional):</b> Any other information that would be useful for us to know.</label><br>
+    <textarea id='comments' name='comments' rows="4" cols="75" placeholder="e.g. this information is based on Ahrer et al (2023) which used NGTS observations to support JWST observations of WASP-39 b"></textarea><br>
+
+    <!--I'm not sure where we want to send this information to-->
+    <!-- Could create an email account e.g ngtsobs@warwick.ac.uk and send it all there-->
+    <!--Also not sure how to set that up-->
+    <input type='submit' value='Submit Request'>
+    <input type='reset' value='Reset Form'>
+</form>
