@@ -5,6 +5,7 @@ news_30 - NGTS-31 - NGTS-33
 news_31 - NGTS-EB-7
 news_32 - ABQ
 news_33 - ATREIDES
-news_34 - TOI-2449
+news_33 - NGTS-EB-8
+news_35 - TOI-2449
 
 
