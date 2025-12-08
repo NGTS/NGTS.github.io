@@ -7,5 +7,7 @@ news_32 - ABQ
 news_33 - ATREIDES
 news_33 - NGTS-EB-8
 news_35 - TOI-2449
+news_36 - Leicester meeting (backdated)
+news-37 - Alicia 3 planets
 
 
