@@ -2,7 +2,7 @@
 
 To add new news items, follow this procedure.
 
-1. Go to pages/news and create a new file called news_X.html, making sure X is incremented by 1.
+1. Go to pages/news and create a new file called `news_X.html`, making sure X is incremented by 1.
 2. Now put this in there
 ```html
 <html>
@@ -29,8 +29,8 @@ $(function(){
 </body>
 </html>
 ```
-3. Now edit and put your news text in there. Images can go in images/news/ . Note that when you link them in the html, you will link them as /images/news/NGTS_wasp39.png as images is at the www root. 
-4. Finally, pages/tabs/news_content.html needs linking to this new file so it can show the new news item. Just create a new dive like this
+3. Now edit and put your news text in there. Images can go in `images/news/` . Note that when you link them in the html, you will link them as `/images/news/NGTS_wasp39.png` as images is at the www root. 
+4. Finally, `pages/tabs/news_content.html` needs linking to this new file so it can show the new news item. Just create a new dive like this:
    ```html
        <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-card">
@@ -43,6 +43,7 @@ $(function(){
       </div>
     </div>
    ```
+   We usually put the paper author instead of the news item author here where they're not the same.
 
-5. You can also modify pages/templates/footer.html to put the latest news there. 
+5. You can also modify `pages/templates/footer2.html` to put the latest news there. 
 
