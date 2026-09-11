@@ -32,12 +32,25 @@ body, html {
 </head>
 <body>
 
+<style>
+#navHamburger { display: none; }
+
+@media (max-width: 1300px) {
+  #navLinks { display: none; }
+  #navHamburger { display: inline-block; }
+}
+
+@media (min-width: 1301px) {
+  #mySidebar { display: none !important; }
+}
+</style>
+
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
     <a href="/index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i> HOME</a>
     <!-- Right-sided navbar links -->
-    <div class="w3-right w3-hide-small w3-hide-medium">
+    <div class="w3-right" id="navLinks">
       <a href="/pages/tabs/for_science_page.html" class="w3-bar-item w3-button"><i class="fa fa-binoculars"></i> OBSERVATORY</a>
       <a href="/pages/tabs/about_page.html" class="w3-bar-item w3-button"><i class="fa fa-info-circle"></i> RESEARCH</a>
       <a href="/pages/tabs/paranal_live_page.html" class="w3-bar-item w3-button"><i class="fa fa-globe"></i> PARANAL LIVE</a>
@@ -53,14 +66,14 @@ body, html {
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large" onclick="w3_open()">
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right" id="navHamburger" onclick="w3_open()">
       <i class="fa fa-bars"></i>
     </a>
   </div>
 </div>
 
 <!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left" style="display:none" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
   <a href="/pages/tabs/about_page.html" class="w3-bar-item w3-button"><i class="fa fa-info-circle"></i> ABOUT NGTS</a>
   <a href="/pages/tabs/for_science_page.html" class="w3-bar-item w3-button"><i class="fa fa-mortar-board"></i> THE OBSERVATORY</a>
