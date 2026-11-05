@@ -6,7 +6,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway&display=swap">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/v4-shims.min.css">
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
@@ -31,12 +32,25 @@ body, html {
 </head>
 <body>
 
+<style>
+#navHamburger { display: none; }
+
+@media (max-width: 1300px) {
+  #navLinks { display: none; }
+  #navHamburger { display: inline-block; }
+}
+
+@media (min-width: 1301px) {
+  #mySidebar { display: none !important; }
+}
+</style>
+
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
     <a href="/index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i> HOME</a>
     <!-- Right-sided navbar links -->
-    <div class="w3-right w3-hide-small">
+    <div class="w3-right" id="navLinks">
       <a href="/pages/tabs/for_science_page.html" class="w3-bar-item w3-button"><i class="fa fa-binoculars"></i> OBSERVATORY</a>
       <a href="/pages/tabs/about_page.html" class="w3-bar-item w3-button"><i class="fa fa-info-circle"></i> RESEARCH</a>
       <a href="/pages/tabs/paranal_live_page.html" class="w3-bar-item w3-button"><i class="fa fa-globe"></i> PARANAL LIVE</a>
@@ -52,14 +66,14 @@ body, html {
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right" id="navHamburger" onclick="w3_open()">
       <i class="fa fa-bars"></i>
     </a>
   </div>
 </div>
 
 <!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left" style="display:none" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
   <a href="/pages/tabs/about_page.html" class="w3-bar-item w3-button"><i class="fa fa-info-circle"></i> ABOUT NGTS</a>
   <a href="/pages/tabs/for_science_page.html" class="w3-bar-item w3-button"><i class="fa fa-mortar-board"></i> THE OBSERVATORY</a>
@@ -67,9 +81,11 @@ body, html {
   <!-- <a href="/pages/tabs/team_page.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> CONSORTIUM</a> -->
   <!-- <a href="/pages/tabs/working_groups_page.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i>SCIENCE TOPICS</a> -->
   <!-- <a href="/pages/tabs/data_page.html" class="w3-bar-item w3-button"><i class="fa fa-database"></i> DATA</a> -->
+  <a href="/pages/tabs/data_page.html" class="w3-bar-item w3-button"><i class="fa fa-database"></i> DATA</a>
   <a href="/pages/tabs/publications_page.html" class="w3-bar-item w3-button"><i class="fa fa-file"></i> PUBLICATIONS</a>
   <a href="/pages/tabs/news_page.html" class="w3-bar-item w3-button"><i class="fa fa-newspaper-o"></i> NEWS</a>
   <a href="https://ngts.planethunters.org" target="_blank" class="w3-bar-item w3-button"><i class="fa fa-binoculars"></i> CITIZEN SCIENCE</a>
   <a href="/pages/tabs/media_page.html" class="w3-bar-item w3-button"><i class="fa fa-film"></i> GALLERY</a>
+  <a href="/pages/tabs/request_obs_page.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> REQUEST OBSERVATIONS</a>
   <a href="/pages/tabs/contact_page.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
 </nav>
