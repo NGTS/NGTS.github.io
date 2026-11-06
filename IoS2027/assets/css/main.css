@@ -3228,25 +3228,19 @@ input, select, textarea {
 	}
 
 		#wrapper > .bg {
-			position: absolute;
+			position: fixed;
 			top: 0;
 			left: 0;
-			width: 100%;
-			height: 100%;
+			width: 100vw;
+			height: 100vh;
 			background-color: #212931;
-			background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/IMG_6250.jpg");
-			background-size: auto,								auto,														100% auto;
-			background-position: center,								center,														top center;
+			background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.38), rgba(0, 0, 0, 0.38)), url("../../images/IMG_6250.jpg");
+			background-size: auto,								auto,														cover;
+			background-position: center,								center,														center;
 			background-repeat: repeat,								no-repeat,													no-repeat;
 			background-attachment: scroll,								scroll,														scroll;
 			z-index: -1;
 		}
-
-			#wrapper > .bg.fixed {
-				position: fixed;
-				width: 100vw;
-				height: 100vh;
-			}
 
 		#wrapper.fade-in:before {
 			pointer-events: none;
@@ -3271,14 +3265,6 @@ input, select, textarea {
 
 		body.is-preload #wrapper.fade-in:before {
 			opacity: 1;
-		}
-
-		@media screen and (orientation: portrait) {
-
-			#wrapper > .bg {
-				background-size: auto,								auto,														auto 175%;
-			}
-
 		}
 
 /* Intro */
@@ -3312,6 +3298,10 @@ input, select, textarea {
 		z-index: 1;
 		min-height: 100vh;
 	}
+
+		#intro h1, #intro h3, #intro p {
+			text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9);
+		}
 
 		#intro input, #intro select, #intro textarea {
 			color: #ffffff;
@@ -3615,7 +3605,9 @@ input, select, textarea {
 		-webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
 		-ms-transition: -ms-transform 1s ease, opacity 1s ease;
 		transition: transform 1s ease, opacity 1s ease;
-		background: rgba(255, 255, 255, 0.175);
+		background: rgba(15, 23, 32, 0.9);
+		box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.25);
+		backdrop-filter: blur(6px);
 		height: 4rem;
 		line-height: 4rem;
 		margin: -4rem auto 0 auto;
